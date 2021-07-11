@@ -1,5 +1,3 @@
-process.env.TZ = 'UTC';
-
 module.exports = {
 	roots: ['<rootDir>/packages/components/src', '<rootDir>/packages/hooks/src', '<rootDir>/packages/utils/src'],
 	transform: {
