@@ -1,0 +1,67 @@
+{
+	"name": "root",
+	"version": "0.0.0",
+	"description": "React libs",
+	"private": true,
+	"license": "UNLICENSED",
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"pre-commit": "yarn test",
+		"start": "lerna run watch --parallel",
+		"link:all": "lerna exec --parallel yarn link",
+		"unlink:all": "lerna exec --parallel --bail=false yarn unlink",
+		"test": "jest --coverage --reporters=default --reporters=jest-junit",
+		"test:local": "jest --watchAll",
+		"test:local:file": "jest --watch",
+		"prepare": "lerna run prepare",
+		"bootstrap": "lerna bootstrap",
+		"lint": "eslint . --ignore-path .gitignore",
+		"lint:fix": "yarn run lint -- --fix",
+		"prettier": "prettier --write . --ignore-path .gitignore",
+		"prettier:check": "prettier --check . --ignore-path .gitignore",
+		"typescript:check": "lerna exec --parallel \"tsc --noEmit -p .\"",
+		"publish": "lerna publish from-package",
+		"bump:version:patch": "lerna version patch --yes",
+		"bump:version:minor": "lerna version minor --yes",
+		"bump:version:major": "lerna version major --yes"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn prettier:check && yarn lint && yarn typescript:check && yarn test",
+			"pre-push": "foxcli is-branch-synced"
+		}
+	},
+	"devDependencies": {
+		"@rollup/plugin-alias": "3.1.1",
+		"@rollup/plugin-typescript": "8.1.0",
+		"@sergiogc9/eslint-config": "1.0.5",
+		"@types/node": "14.14.3",
+		"@types/react": "17.0.0",
+		"@types/react-dom": "17.0.0",
+		"@typescript-eslint/eslint-plugin": "4.28.2",
+		"eslint": "7.30.0",
+		"eslint-plugin-eslint-comments": "3.2.0",
+		"eslint-plugin-import": "2.23.4",
+		"eslint-plugin-jest": "24.3.6",
+		"eslint-plugin-jsx-a11y": "6.4.1",
+		"eslint-plugin-prettier": "3.4.0",
+		"eslint-plugin-react": "7.24.0",
+		"eslint-plugin-react-hooks": "4.2.0",
+		"fox-awesome-cli": "1.1.0",
+		"husky": "4.3.8",
+		"lerna": "3.22.1",
+		"prettier": "2.3.2",
+		"rollup": "2.35.1",
+		"rollup-plugin-dts": "2.0.1",
+		"rollup-plugin-terser": "7.0.2",
+		"tslib": "2.0.3",
+		"typescript": "4.0.3"
+	},
+	"dependencies": {},
+	"peerDependencies": {
+		"react": "17.0.1",
+		"react-dom": "17.0.1"
+	}
+}

@@ -1,0 +1,1 @@
+export { createNameSpacedComponent } from './components';
