@@ -20,7 +20,7 @@ const config = [
 				format: 'esm'
 			}
 		],
-		external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(globalPkg.peerDependencies)],
+		external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(globalPkg.peerDependencies || {})],
 		plugins: [typescript(), terser({ format: { comments: false } })]
 	},
 	{
