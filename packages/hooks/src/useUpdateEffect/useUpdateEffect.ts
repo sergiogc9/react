@@ -1,5 +1,10 @@
 import React from 'react';
 
+/**
+ * Hook same than useEffect without executing the effect in the first render
+ * @param effect The callback function to execute
+ * @param deps The useEffect dependencies
+ */
 const useUpdateEffect = (effect: React.EffectCallback, deps: React.DependencyList) => {
 	const isMounted = React.useRef(false);
 
