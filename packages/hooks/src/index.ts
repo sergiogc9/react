@@ -1,3 +1,4 @@
+import useAddScript from './useAddScript';
 import useClickOutside from './useClickOutside';
 import useFetchImage from './useFetchImage';
 import useFileInput from './useFileInput';
@@ -12,6 +13,7 @@ import useToggleDialog from './useToggleDialog';
 import useUpdateEffect from './useUpdateEffect';
 
 export {
+	useAddScript,
 	useClickOutside,
 	useFetchImage,
 	useFileInput,
