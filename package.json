@@ -23,9 +23,9 @@
 		"prettier:check": "prettier --check . --ignore-path .gitignore",
 		"typescript:check": "lerna exec --parallel \"tsc --noEmit -p .\"",
 		"publish": "lerna publish from-package",
-		"bump:version:patch": "lerna version patch --yes",
-		"bump:version:minor": "lerna version minor --yes",
-		"bump:version:major": "lerna version major --yes"
+		"bump:version:patch": "lerna version patch",
+		"bump:version:minor": "lerna version minor",
+		"bump:version:major": "lerna version major"
 	},
 	"husky": {
 		"hooks": {
@@ -36,7 +36,7 @@
 	"devDependencies": {
 		"@rollup/plugin-alias": "3.1.1",
 		"@rollup/plugin-typescript": "8.1.0",
-		"@sergiogc9/eslint-config": "1.0.5",
+		"@sergiogc9/eslint-config": "1.0.6",
 		"@types/node": "14.14.3",
 		"@types/react": "17.0.0",
 		"@types/react-dom": "17.0.0",
