@@ -3,6 +3,7 @@ import useClickOutside from './useClickOutside';
 import useFetchImage from './useFetchImage';
 import useFileInput from './useFileInput';
 import useIsMounted from './useIsMounted';
+import useIsHorizontalScrolled from './useIsHorizontalScrolled';
 import useIsScrolled from './useIsScrolled';
 import useKeyPressed from './useKeyPressed';
 import useMergeRefs from './useMergeRefs';
@@ -18,6 +19,7 @@ export {
 	useFetchImage,
 	useFileInput,
 	useIsMounted,
+	useIsHorizontalScrolled,
 	useIsScrolled,
 	useKeyPressed,
 	useMergeRefs,
