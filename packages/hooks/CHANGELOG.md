@@ -2,7 +2,7 @@
 
 All notable changes to this package will be documented in this file.
 
-## [v0.2.0] - July, 2021
+## [v0.1.0] - July, 2021
 
 #### Added
 
