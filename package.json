@@ -8,7 +8,6 @@
 		"packages/*"
 	],
 	"scripts": {
-		"pre-commit": "yarn test",
 		"start": "lerna run watch --parallel",
 		"link:all": "lerna exec --parallel yarn link",
 		"unlink:all": "lerna exec --parallel --bail=false yarn unlink",
