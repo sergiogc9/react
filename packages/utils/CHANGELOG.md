@@ -2,6 +2,12 @@
 
 All notable changes to this package will be documented in this file.
 
+## [v0.0.4] - July, 2021
+
+#### Fixed
+
+- Fixed wrong @reduxjs/toolkit peer dependency
+
 ## [v0.0.3] - July, 2021
 
 #### Added

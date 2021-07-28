@@ -21,7 +21,6 @@
 		"test:local:file": "jest --watch"
 	},
 	"devDependencies": {
-		"@reduxjs/toolkit": "1.4.0",
 		"@testing-library/jest-dom": "5.11.5",
 		"@testing-library/react": "11.1.0",
 		"@testing-library/user-event": "12.1.10",
@@ -40,11 +39,11 @@
 		"ts-jest": "26.4.4"
 	},
 	"dependencies": {
+		"@reduxjs/toolkit": "1.4.0",
 		"lodash": "4.17.20",
 		"luxon": "1.26.0"
 	},
 	"peerDependencies": {
-		"@reduxjs/toolkit": "1.4.0",
 		"react": "17.0.1",
 		"react-dom": "17.0.1"
 	},
