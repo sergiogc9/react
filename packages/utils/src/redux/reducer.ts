@@ -27,14 +27,17 @@ const getApiReducers = <State, StartPayload = void, SuccessPayload = void, Error
 	const defaultReducer: CaseReducer<State> = state => state as State;
 	return [
 		getReducer<State, StartPayload>(reducers.start || defaultReducer, {
-			api: 'start'
+			api: 'start',
+			showLoadingBar: options?.showLoadingBar
 		}),
 		getReducer<State, SuccessPayload>(reducers.success || defaultReducer, {
-			api: 'success'
+			api: 'success',
+			showLoadingBar: options?.showLoadingBar
 		}),
 		getReducer<State, ErrorPayload>(reducers.error || defaultReducer, {
 			api: 'error',
-			reload: options?.reload
+			reload: options?.reload,
+			showLoadingBar: options?.showLoadingBar
 		})
 	];
 };

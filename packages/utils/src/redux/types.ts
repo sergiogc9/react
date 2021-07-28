@@ -20,6 +20,7 @@ export type DefaultPayloadError = { code: string; message: string };
 
 export type ApiOperatorOptions = {
 	reload?: boolean; // Used to reload page when optimistic api call fails
+	showLoadingBar?: boolean;
 };
 
 export type ApiReducers<State, StartPayload, SuccessPayload, ErrorPayload> = {
