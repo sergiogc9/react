@@ -2,6 +2,8 @@ import useAddScript from './useAddScript';
 import useClickOutside from './useClickOutside';
 import useFetchImage from './useFetchImage';
 import useFileInput from './useFileInput';
+import useForceRender from './useForceRender';
+import useFullscreen from './useFullscreen';
 import useIsMounted from './useIsMounted';
 import useIsHorizontalScrolled from './useIsHorizontalScrolled';
 import useIsScrolled from './useIsScrolled';
@@ -18,6 +20,8 @@ export {
 	useClickOutside,
 	useFetchImage,
 	useFileInput,
+	useForceRender,
+	useFullscreen,
 	useIsMounted,
 	useIsHorizontalScrolled,
 	useIsScrolled,
