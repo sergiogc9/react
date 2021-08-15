@@ -14,27 +14,28 @@ const useFullscreen = () => {
 
 	React.useEffect(() => {
 		// eslint-disable-next-line no-console
-		typedScreenfull.onerror(ev => console.error('Failed to enable fullscreen', ev));
+		if (typedScreenfull.isEnabled) typedScreenfull.onerror(ev => console.error('Failed to enable fullscreen', ev));
 	});
 
 	React.useEffect(() => {
-		typedScreenfull.onchange(rerender);
+		if (typedScreenfull.isEnabled) typedScreenfull.onchange(rerender);
 	}, [rerender]);
 
-	const closeFullscreen = React.useCallback<Screenfull['exit']>(() => typedScreenfull.exit(), []);
+	const closeFullscreen = React.useCallback<Screenfull['exit']>(async () => {
+		if (typedScreenfull.isEnabled) await typedScreenfull.exit();
+	}, []);
 
-	const openFullscreen = React.useCallback<Screenfull['request']>(
-		(element, options) => typedScreenfull.request(element, options),
-		[]
-	);
+	const openFullscreen = React.useCallback<Screenfull['request']>(async (element, options) => {
+		if (typedScreenfull.isEnabled) await typedScreenfull.request(element, options);
+	}, []);
 
-	const toggleFullscreen = React.useCallback<Screenfull['toggle']>(
-		(element, options) => typedScreenfull.toggle(element, options),
-		[]
-	);
+	const toggleFullscreen = React.useCallback<Screenfull['toggle']>(async (element, options) => {
+		if (typedScreenfull.isEnabled) await typedScreenfull.toggle(element, options);
+	}, []);
 
 	return {
 		closeFullscreen,
+		isFullscreenEnabled: typedScreenfull.isEnabled,
 		isFullscreen: typedScreenfull.isFullscreen,
 		fullscreenElement: typedScreenfull.element,
 		openFullscreen,
