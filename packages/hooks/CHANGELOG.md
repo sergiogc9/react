@@ -2,6 +2,12 @@
 
 All notable changes to this package will be documented in this file.
 
+## [v0.2.1] - August, 2021
+
+#### Fixed
+
+- Fixed wrong screenfull dependency.
+
 ## [v0.2.0] - August, 2021
 
 #### Added
