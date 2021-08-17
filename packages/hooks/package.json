@@ -1,6 +1,6 @@
 {
 	"name": "@sergiogc9/react-hooks",
-	"version": "0.1.1",
+	"version": "0.2.0",
 	"description": "React Hooks Lib",
 	"repository": "git://github.com/sergiogc9/react.git",
 	"main": "dist/cjs/index.js",
