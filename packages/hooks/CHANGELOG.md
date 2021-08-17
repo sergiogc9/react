@@ -2,6 +2,12 @@
 
 All notable changes to this package will be documented in this file.
 
+## [v0.2.0] - August, 2021
+
+#### Added
+
+- Added useFullscreen hook.
+
 ## [v0.1.1] - July, 2021
 
 #### Added

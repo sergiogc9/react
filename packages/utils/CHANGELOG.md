@@ -2,6 +2,12 @@
 
 All notable changes to this package will be documented in this file.
 
+## [v0.0.6] - August, 2021
+
+#### Updated
+
+- Improved createNamespacedComponent adding the possibility to append another namespaced components as sub components.
+
 ## [v0.0.5] - July, 2021
 
 #### Updated
