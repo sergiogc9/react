@@ -14,11 +14,12 @@
 		"dist"
 	],
 	"scripts": {
-		"prepare": "rollup -c ./rollup.config.js",
-		"watch": "rollup -w -c ./rollup.config.js",
+		"build": "yarn js-bundle build",
+		"prepare": "yarn build",
 		"test": "jest --coverage --reporters=default --reporters=jest-junit",
 		"test:local": "jest --watchAll",
-		"test:local:file": "jest --watch"
+		"test:local:file": "jest --watch",
+		"watch": "yarn js-bundle build --watch"
 	},
 	"devDependencies": {
 		"@testing-library/jest-dom": "5.11.5",
@@ -40,6 +41,7 @@
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "1.4.0",
+		"events": "3.3.0",
 		"lodash": "4.17.20",
 		"luxon": "1.26.0"
 	},
@@ -50,5 +52,8 @@
 	"engines": {
 		"node": ">=14.x.x",
 		"npm": ">=6.0.0"
+	},
+	"browser": {
+		"events": "events"
 	}
 }

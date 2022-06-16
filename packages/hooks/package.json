@@ -14,11 +14,12 @@
 		"dist"
 	],
 	"scripts": {
-		"prepare": "rollup -c ./rollup.config.js",
-		"watch": "rollup -w -c ./rollup.config.js",
+		"build": "yarn js-bundle build",
+		"prepare": "yarn build",
 		"test": "jest --coverage --reporters=default --reporters=jest-junit",
 		"test:local": "jest --watchAll",
-		"test:local:file": "jest --watch"
+		"test:local:file": "jest --watch",
+		"watch": "yarn js-bundle build --watch"
 	},
 	"devDependencies": {
 		"@testing-library/jest-dom": "5.11.5",

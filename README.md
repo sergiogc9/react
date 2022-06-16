@@ -150,11 +150,6 @@ Example to only execute tests for Focus component:<br/>
 
 🛈 You can force doing the coverage check by adding `--coverage` at the end of the command.
 
-##### `yarn bootstrap`
-
-Builds all packages using rollup.<br>
-The builds are generated inside a `dist` folder on each package.
-
 ##### `yarn bump:version:[patch | minor | major]`
 
 In order to bump the package's version. previously to push the latests change, it is necessary to run one of this commands
