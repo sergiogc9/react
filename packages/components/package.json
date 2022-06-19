@@ -1,6 +1,6 @@
 {
 	"name": "@sergiogc9/react",
-	"version": "0.0.3-alpha.3",
+	"version": "0.0.3",
 	"description": "React Components Lib",
 	"repository": "git://github.com/sergiogc9/react.git",
 	"license": "UNLICENSED",
