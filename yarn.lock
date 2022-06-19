@@ -1540,20 +1540,20 @@
     redux-thunk "^2.3.0"
     reselect "^4.0.0"
 
-"@sergiogc9/eslint-config@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@sergiogc9/eslint-config/-/eslint-config-1.0.6.tgz#6eb3129e77468a42fbc1de8684e7d316e7bea904"
-  integrity sha512-npgEw2VrBz2mxvrU391VQG1uuxCD2wZ4FrKB1Dcke9OCOcFaxW1ywgz0HCLfFKaAkCNEYljDrA3Mgq20GyaGBw==
+"@sergiogc9/eslint-config@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@sergiogc9/eslint-config/-/eslint-config-1.0.10.tgz#33c97051e0b8811bfc75178953b5056def4b3fcc"
+  integrity sha512-V1482HFMgcrDDqS/VXZ09EP6vuYXGUrqbABN5iajojCh+80hgALLGv3oRgF7telFMdbgMDCagRZZfq/oJNfYDQ==
   dependencies:
     "@typescript-eslint/parser" "4.15.0"
     eslint-config-airbnb "18.2.1"
     eslint-config-airbnb-typescript "12.3.1"
     eslint-config-prettier "7.2.0"
 
-"@sergiogc9/js-bundle@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@sergiogc9/js-bundle/-/js-bundle-1.1.0.tgz#bbbc9d271edd0cb1b087894e0ccdcf310aef1e91"
-  integrity sha512-/DSAXAufXk5IdJnnzPJfrzbtYVm+DWiDGiJT5804ijENCEjPLTgqtAbjYWIlLCUUbMzlSbK21I3D4IQDIt0IAA==
+"@sergiogc9/js-bundle@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@sergiogc9/js-bundle/-/js-bundle-1.1.2.tgz#285c40cc11eae92ee9aaf5a86fd85726e497fc65"
+  integrity sha512-GAPtcFhCCAy2d14ONmnD789UVZfGuI7fZH74sCpkFa77nsNKIyOP5yVbliztA0pkVHUDXGbswWMUz/Jr8yN/ag==
   dependencies:
     chalk "^4.0.0"
     esbuild "^0.14.42"
@@ -2227,12 +2227,12 @@ axe-core@^4.0.2:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.2.3.tgz#2a3afc332f0031b42f602f4a3de03c211ca98f72"
   integrity sha512-pXnVMfJKSIWU2Ml4JHP7pZEPIrgBO1Fd3WGx+fPBsS+KRGhE4vxooD8XBGWbQOIVSZsVK7pUDBBkCicNu80yzQ==
 
-axios@0.21.1:
-  version "0.21.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
-  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
+axios@^0.21.1:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
   dependencies:
-    follow-redirects "^1.10.0"
+    follow-redirects "^1.14.0"
 
 axobject-query@^2.2.0:
   version "2.2.0"
@@ -4041,7 +4041,7 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.1.tgz#bbef080d95fca6709362c73044a1634f7c6e7d05"
   integrity sha512-OMQjaErSFHmHqZe+PSidH5n8j3O0F2DdnVh8JB4j4eUQ2k6KvB0qGfrKIhapvez5JerBbmWkaLYUYWISaESoXg==
 
-follow-redirects@^1.10.0:
+follow-redirects@^1.14.0:
   version "1.15.1"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.1.tgz#0ca6a452306c9b276e4d3127483e29575e207ad5"
   integrity sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==
@@ -4060,12 +4060,12 @@ form-data@^3.0.0:
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
-fox-awesome-cli@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/fox-awesome-cli/-/fox-awesome-cli-1.1.0.tgz#f6364c55b1064ed47eb3676aa0685a286ce90627"
-  integrity sha512-2QzcJri5cxfc04gUcCB+q6F0lMwm3TVLL+vSwghFaQbrf/h6y7/6bxw6YRvK9zI/EVZOgbTtLMlymtFycMxf7Q==
+fox-awesome-cli@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/fox-awesome-cli/-/fox-awesome-cli-1.1.2.tgz#d769ab408230e4656a600bf7e7e341e60f7ecd95"
+  integrity sha512-v7jQsiTPOTBcjqZNtLhNuhqqh/bNC0JMBP+RqEoggBtOFCHcp0AvwKqr4wXDfaJWSctk5JDjQNwr0IUfG3IzKA==
   dependencies:
-    axios "0.21.1"
+    axios "^0.21.1"
     chalk "4.1.0"
     configstore "5.0.1"
     envinfo "7.7.4"

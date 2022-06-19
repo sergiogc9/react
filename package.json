@@ -32,8 +32,8 @@
 		}
 	},
 	"devDependencies": {
-		"@sergiogc9/eslint-config": "1.0.6",
-		"@sergiogc9/js-bundle": "1.1.0",
+		"@sergiogc9/eslint-config": "^1.0.10",
+		"@sergiogc9/js-bundle": "^1.1.2",
 		"@types/node": "14.14.3",
 		"@types/react": "17.0.0",
 		"@types/react-dom": "17.0.0",
@@ -46,7 +46,7 @@
 		"eslint-plugin-prettier": "3.4.0",
 		"eslint-plugin-react": "7.24.0",
 		"eslint-plugin-react-hooks": "4.2.0",
-		"fox-awesome-cli": "1.1.0",
+		"fox-awesome-cli": "^1.1.2",
 		"husky": "4.3.8",
 		"lerna": "5.1.4",
 		"prettier": "2.3.2",
