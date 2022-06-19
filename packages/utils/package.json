@@ -13,15 +13,16 @@
 		"access": "public"
 	},
 	"main": "dist/cjs/index.js",
-	"module": "dist/esm/index.js",
+	"module": "test/esm/index.js",
 	"types": "dist/types/index.d.ts",
 	"exports": {
-		"import": "./dist/esm/index.js",
+		"import": "./test/esm/index.js",
 		"require": "./dist/cjs/index.js"
 	},
 	"sideEffects": false,
 	"files": [
-		"dist"
+		"dist",
+		"test"
 	],
 	"scripts": {
 		"build": "node ./build.js",

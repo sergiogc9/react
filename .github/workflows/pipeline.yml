@@ -49,8 +49,6 @@ jobs:
         run: yarn
       - name: Build packages
         run: yarn build
-      - name: Validate code quality
-        run: yarn lint && yarn typescript:check
       - name: Unit testing
         run: yarn test --runInBand
       - name: Publish to Github

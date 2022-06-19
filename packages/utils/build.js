@@ -7,10 +7,9 @@ const isWatchMode = process.argv.includes('--watch');
 
 const performBuild = async () => {
 	await buildPackage({
-		isWatchMode: false,
+		isWatchMode,
 		esbuildOptions: {
-			minify: false,
-			target: 'es2020'
+			minify: false
 		}
 	});
 };
