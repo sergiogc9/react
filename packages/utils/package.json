@@ -39,7 +39,7 @@
 		"ts-jest": "26.4.4"
 	},
 	"dependencies": {
-		"@reduxjs/toolkit": "1.4.0",
+		"@reduxjs/toolkit": "1.8.2",
 		"events": "3.3.0",
 		"lodash": "4.17.21",
 		"luxon": "1.26.0"
