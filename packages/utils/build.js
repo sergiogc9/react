@@ -9,7 +9,8 @@ const performBuild = async () => {
 	await buildPackage({
 		isWatchMode,
 		esbuildOptions: {
-			minify: false
+			minify: false,
+			target: 'es2020'
 		}
 	});
 };
