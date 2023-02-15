@@ -46,6 +46,7 @@
 		"ts-jest": "26.4.4"
 	},
 	"dependencies": {
+		"@sergiogc9/react-utils": "0.0.8",
 		"screenfull": "5.1.0"
 	},
 	"peerDependencies": {
