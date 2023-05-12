@@ -8,7 +8,7 @@ import React from 'react';
 const useMergeRefs = <T>(
 	...refs: Array<React.MutableRefObject<T> | React.LegacyRef<T> | React.RefObject<T>>
 ): React.RefCallback<T> => {
-	const mergeFn = React.useCallback(value => {
+	const mergeFn = React.useCallback((value: any) => {
 		refs.forEach(ref => {
 			const reference = ref;
 			if (typeof reference === 'function') {
