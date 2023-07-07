@@ -1,6 +1,6 @@
 {
 	"name": "@sergiogc9/react-hooks",
-	"version": "0.3.2",
+	"version": "0.3.3",
 	"description": "React Hooks Lib",
 	"repository": "git://github.com/sergiogc9/react.git",
 	"license": "UNLICENSED",
@@ -46,7 +46,7 @@
 		"ts-jest": "26.4.4"
 	},
 	"dependencies": {
-		"@sergiogc9/react-utils": "^0.0.10",
+		"@sergiogc9/react-utils": "^0.0.11",
 		"screenfull": "5.1.0"
 	},
 	"peerDependencies": {
