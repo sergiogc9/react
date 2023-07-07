@@ -15,8 +15,12 @@ export const createNameSpacedComponent = <
 	return composedComponent as T & U;
 };
 
-export const lazyLoadComponent = (importStatement: any) => {
-	const LazyComponent = React.lazy(importStatement);
-	setTimeout(() => importStatement(), 1000);
+export const lazyLoadComponent = <T extends React.ComponentType<any>>(
+	factory: () => Promise<{
+		default: T;
+	}>
+) => {
+	const LazyComponent = React.lazy(factory);
+	setTimeout(() => factory(), 1000);
 	return LazyComponent;
 };
